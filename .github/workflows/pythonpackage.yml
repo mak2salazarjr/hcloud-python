@@ -23,7 +23,7 @@ jobs:
         pip install -r requirements/test.txt
     - name: Lint with flake8
       run: |
-        flake8 .
+        flake8 hcloud tests setup.py
     - name: Test with pytest
       run: |
         pip install pytest
